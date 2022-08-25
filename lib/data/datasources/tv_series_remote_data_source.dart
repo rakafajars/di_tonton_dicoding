@@ -12,6 +12,7 @@ abstract class TvSeriesRemoteDataSource {
   Future<List<TvSeriesModel>> getTvSeriesTopRated();
   Future<TvSeriesDetailResponse> getTvSeriesDetail(int id);
   Future<List<TvSeriesModel>> getTvSeriesRecommendation(int id);
+  Future<List<TvSeriesModel>> searchTvSeries(String query);
 }
 
 class TvSeriesRemoteDataSourceImpl implements TvSeriesRemoteDataSource {
@@ -86,6 +87,21 @@ class TvSeriesRemoteDataSourceImpl implements TvSeriesRemoteDataSource {
     final response = await client.get(
       Uri.parse(
         '$BASE_URL/tv/$id/recommendations?$API_KEY',
+      ),
+    );
+
+    if (response.statusCode == 200) {
+      return TvSeriesResponse.fromJson(json.decode(response.body)).tvSeriesList;
+    } else {
+      throw ServerException();
+    }
+  }
+
+  @override
+  Future<List<TvSeriesModel>> searchTvSeries(String query) async {
+    final response = await client.get(
+      Uri.parse(
+        '$BASE_URL/search/tv?$API_KEY&query=$query',
       ),
     );
 

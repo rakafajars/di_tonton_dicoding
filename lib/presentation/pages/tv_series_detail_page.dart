@@ -158,7 +158,13 @@ class DetailContentTv extends StatelessWidget {
                                         return Padding(
                                           padding: EdgeInsets.all(4.0),
                                           child: InkWell(
-                                            onTap: () {},
+                                            onTap: () {
+                                              Navigator.pushNamed(
+                                                context,
+                                                TvSeriesDetailPage.ROUTE_NAME,
+                                                arguments: tvSeries.id,
+                                              );
+                                            },
                                             child: ClipRRect(
                                               borderRadius: BorderRadius.all(
                                                 Radius.circular(8),
