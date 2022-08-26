@@ -19,14 +19,6 @@ class MovieDetailNotifier extends ChangeNotifier {
   final SaveWatchlist saveWatchlist;
   final RemoveWatchlist removeWatchlist;
 
-  MovieDetailNotifier({
-    required this.getMovieDetail,
-    required this.getMovieRecommendations,
-    required this.getWatchListStatus,
-    required this.saveWatchlist,
-    required this.removeWatchlist,
-  });
-
   late MovieDetail _movie;
   MovieDetail get movie => _movie;
 
@@ -44,6 +36,14 @@ class MovieDetailNotifier extends ChangeNotifier {
 
   bool _isAddedtoWatchlist = false;
   bool get isAddedToWatchlist => _isAddedtoWatchlist;
+
+  MovieDetailNotifier({
+    required this.getMovieDetail,
+    required this.getMovieRecommendations,
+    required this.getWatchListStatus,
+    required this.saveWatchlist,
+    required this.removeWatchlist,
+  });
 
   Future<void> fetchMovieDetail(int id) async {
     _movieState = RequestState.Loading;
@@ -111,6 +111,7 @@ class MovieDetailNotifier extends ChangeNotifier {
 
   Future<void> loadWatchlistStatus(int id) async {
     final result = await getWatchListStatus.execute(id);
+    print(result);
     _isAddedtoWatchlist = result;
     notifyListeners();
   }

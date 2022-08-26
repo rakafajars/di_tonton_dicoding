@@ -5,8 +5,10 @@ class TvSeriesDetail extends Equatable {
   final String? originalName;
   final double? voteAverage;
   final String? overview;
+  final int id;
 
   TvSeriesDetail({
+    required this.id,
     required this.posterPath,
     required this.originalName,
     required this.voteAverage,
@@ -14,6 +16,7 @@ class TvSeriesDetail extends Equatable {
   });
   @override
   List<Object?> get props => [
+        id,
         posterPath,
         originalName,
         voteAverage,

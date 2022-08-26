@@ -27,6 +27,8 @@ class _TvSeriesDetailPageState extends State<TvSeriesDetailPage> {
       () {
         Provider.of<TvSeriesDetailNotifier>(context, listen: false)
             .fetchTvSeriesDetail(widget.id);
+        Provider.of<TvSeriesDetailNotifier>(context, listen: false)
+            .loadTvSeriesListStatus(widget.id);
       },
     );
   }
@@ -45,6 +47,7 @@ class _TvSeriesDetailPageState extends State<TvSeriesDetailPage> {
               child: DetailContentTv(
                 tvSeriesDetail: provider.tvSeriesDetail,
                 tvSeriesRecommendation: provider.tvSeriesRecommendation,
+                isAddedTvSeriesWatchlist: provider.isAddedToWatchlist,
               ),
             );
           } else {
@@ -59,10 +62,13 @@ class _TvSeriesDetailPageState extends State<TvSeriesDetailPage> {
 class DetailContentTv extends StatelessWidget {
   final TvSeriesDetail tvSeriesDetail;
   final List<TvSeries> tvSeriesRecommendation;
+  final bool isAddedTvSeriesWatchlist;
+
   const DetailContentTv({
     Key? key,
     required this.tvSeriesDetail,
     required this.tvSeriesRecommendation,
+    required this.isAddedTvSeriesWatchlist,
   }) : super(key: key);
 
   @override
@@ -106,6 +112,57 @@ class DetailContentTv extends StatelessWidget {
                             Text(
                               tvSeriesDetail.originalName ?? "-",
                               style: kHeading5,
+                            ),
+                            ElevatedButton(
+                              onPressed: () async {
+                                if (!isAddedTvSeriesWatchlist) {
+                                  await Provider.of<TvSeriesDetailNotifier>(
+                                          context,
+                                          listen: false)
+                                      .addTvSeriesList(
+                                    tvSeriesDetail,
+                                  );
+                                } else {
+                                  await Provider.of<TvSeriesDetailNotifier>(
+                                          context,
+                                          listen: false)
+                                      .removeTvSeriesFromTvSerieslist(
+                                    tvSeriesDetail,
+                                  );
+                                }
+
+                                final message =
+                                    Provider.of<TvSeriesDetailNotifier>(context,
+                                            listen: false)
+                                        .watchlistMessage;
+
+                                if (message ==
+                                        TvSeriesDetailNotifier
+                                            .watchlistAddSuccessMessage ||
+                                    message ==
+                                        TvSeriesDetailNotifier
+                                            .watchlistRemoveSuccessMessage) {
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                      SnackBar(content: Text(message)));
+                                } else {
+                                  showDialog(
+                                      context: context,
+                                      builder: (context) {
+                                        return AlertDialog(
+                                          content: Text(message),
+                                        );
+                                      });
+                                }
+                              },
+                              child: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  isAddedTvSeriesWatchlist
+                                      ? Icon(Icons.check)
+                                      : Icon(Icons.add),
+                                  Text('Watchlist'),
+                                ],
+                              ),
                             ),
                             Row(
                               mainAxisSize: MainAxisSize.min,
