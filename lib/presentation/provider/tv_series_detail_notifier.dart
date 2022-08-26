@@ -95,6 +95,8 @@ class TvSeriesDetailNotifier extends ChangeNotifier {
       },
     );
 
+    print(tvSeries.id);
+
     await loadTvSeriesListStatus(tvSeries.id);
   }
 
@@ -115,7 +117,6 @@ class TvSeriesDetailNotifier extends ChangeNotifier {
 
   Future<void> loadTvSeriesListStatus(int id) async {
     final result = await getTvSeriesWatchlistStatus.execute(id);
-    print(result);
     _isAddedtoWatchlist = result;
     notifyListeners();
   }

@@ -2,6 +2,7 @@ import 'package:ditonton/presentation/pages/about_page.dart';
 import 'package:ditonton/presentation/pages/movie_page.dart';
 import 'package:ditonton/presentation/pages/search_page.dart';
 import 'package:ditonton/presentation/pages/tv_series_page.dart';
+import 'package:ditonton/presentation/pages/tv_series_watchlist_page.dart';
 import 'package:ditonton/presentation/pages/watchlist_movies_page.dart';
 import 'package:flutter/material.dart';
 
@@ -42,9 +43,16 @@ class _BottomNavigatorPageState extends State<BottomNavigatorPage> {
             ),
             ListTile(
               leading: Icon(Icons.save_alt),
-              title: Text('Watchlist'),
+              title: Text('Movie Watchlist'),
               onTap: () {
                 Navigator.pushNamed(context, WatchlistMoviesPage.ROUTE_NAME);
+              },
+            ),
+            ListTile(
+              leading: Icon(Icons.tv),
+              title: Text('Tv Series Watchlist'),
+              onTap: () {
+                Navigator.pushNamed(context, TvSeriesWatchlistPage.ROUTE_NAME);
               },
             ),
             ListTile(
