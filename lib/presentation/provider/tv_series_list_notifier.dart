@@ -1,9 +1,10 @@
 import 'package:ditonton/common/state_enum.dart';
 import 'package:ditonton/domain/entities/tv_series.dart';
-import 'package:ditonton/domain/usecases/get_tv_series_airing_today.dart';
-import 'package:ditonton/domain/usecases/get_tv_series_popular.dart';
-import 'package:ditonton/domain/usecases/get_tv_series_top_rated.dart';
+import 'package:ditonton/domain/usecases/tv_series/get_tv_series_airing_today.dart';
+import 'package:ditonton/domain/usecases/tv_series/get_tv_series_popular.dart';
 import 'package:flutter/foundation.dart';
+
+import '../../domain/usecases/tv_series/get_tv_series_top_rated.dart';
 
 class TvSeriesListNotifier extends ChangeNotifier {
   // Tv Series Airing Today
