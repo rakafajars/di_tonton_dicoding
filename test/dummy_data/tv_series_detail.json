@@ -1,0 +1,192 @@
+{
+    "adult": false,
+    "backdrop_path": "/ypLoTftyF5EpGBxJas4PThIdiU4.jpg",
+    "created_by": [
+        {
+            "id": 57062,
+            "credit_id": "5258a144760ee34661655204",
+            "name": "I. Marlene King",
+            "gender": 1,
+            "profile_path": "/kODXeOzxJC8SINh7xeOlmzlHPNS.jpg"
+        }
+    ],
+    "episode_run_time": [
+        41
+    ],
+    "first_air_date": "2010-06-08",
+    "genres": [
+        {
+            "id": 18,
+            "name": "Drama"
+        },
+        {
+            "id": 9648,
+            "name": "Mystery"
+        }
+    ],
+    "homepage": "http://freeform.go.com/shows/pretty-little-liars",
+    "id": 31917,
+    "in_production": false,
+    "languages": [
+        "en"
+    ],
+    "last_air_date": "2017-06-27",
+    "last_episode_to_air": {
+        "air_date": "2017-06-27",
+        "episode_number": 20,
+        "id": 1328760,
+        "name": "Til DeAth Do Us PArt",
+        "overview": "All is revealed as the ultimate endgame comes to light.",
+        "production_code": "",
+        "runtime": 41,
+        "season_number": 7,
+        "show_id": 31917,
+        "still_path": "/4IoXGT6ZwW1XgwWabyaIe2Yxdk4.jpg",
+        "vote_average": 6.7,
+        "vote_count": 3
+    },
+    "name": "Pretty Little Liars",
+    "next_episode_to_air": null,
+    "networks": [
+        {
+            "id": 75,
+            "name": "ABC Family",
+            "logo_path": "/p57JGkSUBdXbOtqkEKeTnfHn7kd.png",
+            "origin_country": "US"
+        },
+        {
+            "id": 1267,
+            "name": "Freeform",
+            "logo_path": "/rsz16keQ0hiBWYpaKIFspsMwuqj.png",
+            "origin_country": "US"
+        }
+    ],
+    "number_of_episodes": 161,
+    "number_of_seasons": 7,
+    "origin_country": [
+        "US"
+    ],
+    "original_language": "en",
+    "original_name": "Pretty Little Liars",
+    "overview": "Based on the Pretty Little Liars series of young adult novels by Sara Shepard, the series follows the lives of four girls — Spencer, Hanna, Aria, and Emily — whose clique falls apart after the disappearance of their queen bee, Alison. One year later, they begin receiving messages from someone using the name \"A\" who threatens to expose their secrets — including long-hidden ones they thought only Alison knew.",
+    "popularity": 212.98,
+    "poster_path": "/aUPbHiLS3hCHKjtLsncFa9g0viV.jpg",
+    "production_companies": [
+        {
+            "id": 10067,
+            "logo_path": "/p1kZoVNfkVvk7xyJZEposRxcfh8.png",
+            "name": "Alloy Entertainment",
+            "origin_country": "US"
+        },
+        {
+            "id": 29347,
+            "logo_path": "/eJjnf008uDj3LZ3Fu8M8FKCkl6N.png",
+            "name": "Warner Horizon Television",
+            "origin_country": "US"
+        },
+        {
+            "id": 75339,
+            "logo_path": null,
+            "name": "Russian Hill Productions",
+            "origin_country": "US"
+        },
+        {
+            "id": 75340,
+            "logo_path": null,
+            "name": "Long Lake Media",
+            "origin_country": "US"
+        }
+    ],
+    "production_countries": [
+        {
+            "iso_3166_1": "US",
+            "name": "United States of America"
+        }
+    ],
+    "seasons": [
+        {
+            "air_date": "2012-08-28",
+            "episode_count": 11,
+            "id": 43395,
+            "name": "Specials",
+            "overview": "",
+            "poster_path": "/6Qt6NIlWxxuiNLsd9H9WxjWFmi8.jpg",
+            "season_number": 0
+        },
+        {
+            "air_date": "2010-06-08",
+            "episode_count": 22,
+            "id": 43392,
+            "name": "Season 1",
+            "overview": "",
+            "poster_path": "/m4quKGjN9gt6SorPRqclVftPClW.jpg",
+            "season_number": 1
+        },
+        {
+            "air_date": "2011-06-14",
+            "episode_count": 25,
+            "id": 43393,
+            "name": "Season 2",
+            "overview": "Season two begins moments after the explosive season one finale and the girls are the talk of the town. Surprises and challenges will be in store for each, and \"A\" may succeed in her quest. Emily, Hanna, Spencer, and Aria are crumbling under the constant pressure of A's relentless texts and the knowledge that A inexplicably knows every little detail of their lives, including their thoughts, and is watching and anticipating the girls' every move. Spencer's family is falling apart. Aria and Ezra's relationship gets even more complicated, and Aria's brother Mike finds himself in trouble with the law, while their parents find themselves tested like never before.",
+            "poster_path": "/4BikyFpJ9LnSxDXhuZF5QMFtKdl.jpg",
+            "season_number": 2
+        },
+        {
+            "air_date": "2012-06-05",
+            "episode_count": 24,
+            "id": 43394,
+            "name": "Season 3",
+            "overview": "",
+            "poster_path": "/lSi1fFg21x2YMyAO49CmQTqK543.jpg",
+            "season_number": 3
+        },
+        {
+            "air_date": "2013-06-11",
+            "episode_count": 24,
+            "id": 43396,
+            "name": "Season 4",
+            "overview": "",
+            "poster_path": "/x67TIFqCnFLLTVHi2vfxKFi1gPj.jpg",
+            "season_number": 4
+        },
+        {
+            "air_date": "2014-06-10",
+            "episode_count": 26,
+            "id": 61066,
+            "name": "Season 5",
+            "overview": "",
+            "poster_path": "/7kwds7CnHqMeYwEwHkl5Lx0i1GH.jpg",
+            "season_number": 5
+        },
+        {
+            "air_date": "2015-06-02",
+            "episode_count": 20,
+            "id": 66519,
+            "name": "Season 6",
+            "overview": "The girls may have gotten out of the Dollhouse but what happened to them during their time of captivity has lasting effects. With worried loved ones watching over them, the PLLs are home and trying to heal, with not much success. Even with suspected tormentor Andrew in custody, Aria, Emily, Hanna and Spencer fear they are far from safe. Meanwhile, Alison must deal with her past indiscretions and her notoriety around Rosewood.",
+            "poster_path": "/qdvS6s5QRIx9lrgJLS29606vFmY.jpg",
+            "season_number": 6
+        },
+        {
+            "air_date": "2016-06-21",
+            "episode_count": 20,
+            "id": 76310,
+            "name": "Season 7",
+            "overview": "After Hanna's shocking abduction by \"Uber A\", the PLLs and company desperately race against the clock to save one of their own. The only way to do this is by handing over evidence of Charlotte's real murderer to \"Uber A\". In order to do so, the girls must decide what blatant lines they are willing to cross that they have never breached before; and once they cross that line, there is no turning back.",
+            "poster_path": "/xWEYL5vBzzsSwlwRXJpIBmMbjwJ.jpg",
+            "season_number": 7
+        }
+    ],
+    "spoken_languages": [
+        {
+            "english_name": "English",
+            "iso_639_1": "en",
+            "name": "English"
+        }
+    ],
+    "status": "Ended",
+    "tagline": "Time to bring your A game.",
+    "type": "Scripted",
+    "vote_average": 8.034,
+    "vote_count": 2194
+}

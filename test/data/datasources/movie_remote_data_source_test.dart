@@ -116,7 +116,12 @@ void main() {
   group('get movie detail', () {
     final tId = 1;
     final tMovieDetail = MovieDetailResponse.fromJson(
-        json.decode(readJson('dummy_data/movie_detail.json')));
+      json.decode(
+        readJson(
+          'dummy_data/movie_detail.json',
+        ),
+      ),
+    );
 
     test('should return movie detail when the response code is 200', () async {
       // arrange

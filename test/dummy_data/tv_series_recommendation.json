@@ -1,0 +1,474 @@
+{
+    "page": 1,
+    "results": [
+        {
+            "adult": false,
+            "backdrop_path": "/bMwb6jZYemWvH8Td1qP0QYzwRZe.jpg",
+            "id": 79863,
+            "name": "Pretty Little Liars: The Perfectionists",
+            "original_language": "en",
+            "original_name": "Pretty Little Liars: The Perfectionists",
+            "overview": "In Beacon Heights, a seemingly perfect town, a group of three college friends struggle with the stress of being overachievers. In the aftermath of the town’s first murder, each Perfectionist hides behind a secret, a lie and an alibi.",
+            "poster_path": "/xIpqBtVpu9bUq05dT3VTRYPjBP7.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                9648,
+                80,
+                18
+            ],
+            "popularity": 43.452,
+            "first_air_date": "2019-03-20",
+            "vote_average": 7.921,
+            "vote_count": 419,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/c2tbGNRSPSFWYBrkAOwVhmfv2J7.jpg",
+            "id": 1395,
+            "name": "Gossip Girl",
+            "original_language": "en",
+            "original_name": "Gossip Girl",
+            "overview": "An exclusive group of privileged teens from a posh prep school on Manhattan's Upper East Side whose lives revolve around the blog of the all-knowing albeit ultra-secretive Gossip Girl.",
+            "poster_path": "/mRvSUuU1VQQkZZ578jKJpcUCuL8.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18,
+                9648
+            ],
+            "popularity": 122.593,
+            "first_air_date": "2007-09-19",
+            "vote_average": 8.358,
+            "vote_count": 1641,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/eDNSgT1xPMKYcEzJ5GG0PCE3NcN.jpg",
+            "id": 269,
+            "name": "One Tree Hill",
+            "original_language": "en",
+            "original_name": "One Tree Hill",
+            "overview": "In Tree Hill, North Carolina two half brothers share a last name and nothing else. Brooding, blue-collar Lucas is a talented street-side basketball player, but his skills are appreciated only by his friends at the river court. Popular, affluent Nathan basks in the hero-worship of the town, as the star of his high school team. And both boys are the son of former college ball player Dan Scott whose long ago choice to abandon Lucas and his mother Karen, will haunt him long into his life with wife Deb and their son Nathan.",
+            "poster_path": "/5Ixd04JQ3yRz8b7cltmnbfB6ciD.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18
+            ],
+            "popularity": 74.551,
+            "first_air_date": "2003-09-23",
+            "vote_average": 7.785,
+            "vote_count": 302,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/wY8JJgXwCbof1cK3eccZW4cM7L4.jpg",
+            "id": 63210,
+            "name": "Shadowhunters",
+            "original_language": "en",
+            "original_name": "Shadowhunters",
+            "overview": "When Clary Fray's mother has disappeared, Clary joins a band of Shadowhunters; demon killing hunters, and gets caught up in a plan to save the world.",
+            "poster_path": "/66YHvvVduC21xcMXPpBBF0ywyVZ.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10759,
+                18,
+                10765
+            ],
+            "popularity": 118.736,
+            "first_air_date": "2016-01-12",
+            "vote_average": 7.539,
+            "vote_count": 777,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/gchZSaFUw9a6FerXnvhp2EJ6y7f.jpg",
+            "id": 18165,
+            "name": "The Vampire Diaries",
+            "original_language": "en",
+            "original_name": "The Vampire Diaries",
+            "overview": "The story of two vampire brothers obsessed with the same girl, who bears a striking resemblance to the beautiful but ruthless vampire they knew and loved in 1864.",
+            "poster_path": "/agkRkx58t6Ai8AqUOHBOGjRyUGW.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18,
+                10765
+            ],
+            "popularity": 503.53,
+            "first_air_date": "2009-09-10",
+            "vote_average": 8.35,
+            "vote_count": 7474,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/b1Mh03Aeu4IlGvdNm10cbQQxt95.jpg",
+            "id": 46896,
+            "name": "The Originals",
+            "original_language": "en",
+            "original_name": "The Originals",
+            "overview": "A spin-off from The Vampire Diaries and set in New Orleans, The Originals centers on the Mikaelson siblings, otherwise known as the world's original vampires: Klaus, Elijah, and Rebekah. Now Klaus must take down his protégé, Marcel, who is now in charge of New Orleans, in order to re-take his city, as he originally built New Orleans. Klaus departed from the city after being chased down by his father Mikael, while it was being constructed and Marcel took charge. As Klaus has returned after many years, his ego has provoked him to become the king of the city. \"Every King needs an heir\" says Klaus, accepting the unborn child. The child is a first to be born to a hybrid and a werewolf.",
+            "poster_path": "/2llbXc2BOkLkBGgcNJCRbrWedUO.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10765,
+                18,
+                9648
+            ],
+            "popularity": 143.006,
+            "first_air_date": "2013-10-03",
+            "vote_average": 8.6,
+            "vote_count": 2812,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/d80flL9gjiYBhK7lqApwrRFGGCb.jpg",
+            "id": 5917,
+            "name": "90210",
+            "original_language": "en",
+            "original_name": "90210",
+            "overview": "90210 revolves around several students at the fictional West Beverly Hills High School, including new Beverly Hills residents Annie Wilson and Dixon Wilson. Their father, Harry Wilson, has returned from Kansas to his Beverly Hills childhood home with his family to care for his mother, former television and theater actress Tabitha Wilson, who has a drinking problem and clashes with his wife Debbie Wilson. Annie and Dixon struggle to adjust to their new lives while making friends and yet adhering to their parents' wishes.",
+            "poster_path": "/6uy8Le8X8qqvc5X7pSFn3BJA69M.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18
+            ],
+            "popularity": 47.415,
+            "first_air_date": "2008-09-02",
+            "vote_average": 5.709,
+            "vote_count": 134,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/gZzIQxo2ukFSdZGtlttA0wI6kax.jpg",
+            "id": 34524,
+            "name": "Teen Wolf",
+            "original_language": "en",
+            "original_name": "Teen Wolf",
+            "overview": "Scott McCall, a high school student living in the town of Beacon Hills has his life drastically changed when he's bitten by a werewolf, becoming one himself. He must henceforth learn to balance his problematic new identity with his day-to-day teenage life. The following characters are instrumental to his struggle: Stiles, his best friend; Allison, his love interest who comes from a family of werewolf hunters; and Derek, a mysterious werewolf with a dark past. Throughout the series, he strives to keep his loved ones safe while maintaining normal relationships with them.",
+            "poster_path": "/vY2vfAskJTiWsQSv6bdbNCQhPLm.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10765,
+                18
+            ],
+            "popularity": 264.473,
+            "first_air_date": "2011-06-05",
+            "vote_average": 8.608,
+            "vote_count": 3346,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/aM9riYvt5kPkX6ZrNNPL48ScP6d.jpg",
+            "id": 39272,
+            "name": "Once Upon a Time",
+            "original_language": "en",
+            "original_name": "Once Upon a Time",
+            "overview": "There is a town in Maine where every story book character you've ever known is trapped between two worlds, victims of a powerful curse. Only one knows the truth and only one can break the spell.\n\nEmma Swan is a 28-year-old bail bonds collector who has been supporting herself since she was abandoned as a baby. Things change for her when her son Henry, whom she abandoned years ago, finds her and asks for her help explaining that she is from a different world where she is Snow White's missing daughter.",
+            "poster_path": "/49qD372jeHUTmdNMGJkjCFZdv9y.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18,
+                10765
+            ],
+            "popularity": 153.112,
+            "first_air_date": "2011-10-23",
+            "vote_average": 7.255,
+            "vote_count": 1717,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/Qzpe5J1Q6i4uYw2sGJSBbswqbD.jpg",
+            "id": 66788,
+            "name": "13 Reasons Why",
+            "original_language": "en",
+            "original_name": "13 Reasons Why",
+            "overview": "After a teenage girl's perplexing suicide, a classmate receives a series of tapes that unravel the mystery of her tragic choice.",
+            "poster_path": "/nel144y4dIOdFFid6twN5mAX9Yd.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18,
+                9648
+            ],
+            "popularity": 77.755,
+            "first_air_date": "2017-03-31",
+            "vote_average": 7.748,
+            "vote_count": 3393,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/p3Ux7PoKVyYbXbBVimCfFDtKaCs.jpg",
+            "id": 1417,
+            "name": "Glee",
+            "original_language": "en",
+            "original_name": "Glee",
+            "overview": "In this musical comedy, optimistic high school teacher Will Schuester tries to refuel his own passion while reinventing the high school's glee club and challenging a group of outcasts to realize their star potential as they strive to outshine their singing competition while navigating the cruel halls of McKinley High.",
+            "poster_path": "/62T2vsZYTje3KhdCsiLR1K1RFJW.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "popularity": 76.094,
+            "first_air_date": "2009-05-19",
+            "vote_average": 6.707,
+            "vote_count": 569,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/atwkAlHM9NQjEOes09YuSrwsPPQ.jpg",
+            "id": 37632,
+            "name": "Switched at Birth",
+            "original_language": "en",
+            "original_name": "Switched at Birth",
+            "overview": "The story of two teenage girls who discover they were accidentally switched as newborns in the hospital. Bay Kennish grew up in a wealthy family with two parents and a brother, while Daphne Vasquez, who lost her hearing at an early age due to a case of meningitis, grew up with a single mother in a working-class neighborhood. Things come to a dramatic head when both families meet and struggle to learn how to live together for the sake of the girls.",
+            "poster_path": "/db5XnOxGcUHeNhBRNbHfqTlzXmk.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18
+            ],
+            "popularity": 31.763,
+            "first_air_date": "2011-06-06",
+            "vote_average": 7.604,
+            "vote_count": 164,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/rNlYsPO8oqZrxedntqqzfyPJNzq.jpg",
+            "id": 61056,
+            "name": "How to Get Away with Murder",
+            "original_language": "en",
+            "original_name": "How to Get Away with Murder",
+            "overview": "A sexy, suspense-driven legal thriller about a group of ambitious law students and their brilliant, mysterious criminal defense professor. They become entangled in a murder plot and will shake the entire university and change the course of their lives.",
+            "poster_path": "/bJs8Y6T88NcgksxA8UaVl4YX8p8.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                80,
+                18,
+                9648
+            ],
+            "popularity": 79.745,
+            "first_air_date": "2014-09-25",
+            "vote_average": 7.9,
+            "vote_count": 1220,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/rpB9xThPAHPpBHwNe5g7th6WsAW.jpg",
+            "id": 69050,
+            "name": "Riverdale",
+            "original_language": "en",
+            "original_name": "Riverdale",
+            "overview": "Set in the present, the series offers a bold, subversive take on Archie, Betty, Veronica and their friends, exploring the surreality of small-town life, the darkness and weirdness bubbling beneath Riverdale’s wholesome facade.",
+            "poster_path": "/kzZUa05wZOEiC2UVuJA2T8VrETU.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                80,
+                18,
+                9648
+            ],
+            "popularity": 245.011,
+            "first_air_date": "2017-01-26",
+            "vote_average": 8.527,
+            "vote_count": 12768,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/9YLMZClDOs2cmVGiFXx1slAE4sP.jpg",
+            "id": 4586,
+            "name": "Gilmore Girls",
+            "original_language": "en",
+            "original_name": "Gilmore Girls",
+            "overview": "Set in the charming town of Stars Hollow, Connecticut, the series follows the captivating lives of Lorelai and Rory Gilmore, a mother/daughter pair who have a relationship most people only dream of.",
+            "poster_path": "/dSS7XoqmNxMebyVbEGBY0HWrReA.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "popularity": 221.076,
+            "first_air_date": "2000-10-05",
+            "vote_average": 7.87,
+            "vote_count": 614,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/7ssuZk33GSPkAdMsrAcr02PwbLj.jpg",
+            "id": 67725,
+            "name": "Famous in Love",
+            "original_language": "en",
+            "original_name": "Famous in Love",
+            "overview": "Ordinary college student Paige gets her big break after auditioning for the starring role in a Hollywood blockbuster. She must now navigate her new star-studded life and the highs and lows that come with being the new It Girl in town as well as balancing her college workload.",
+            "poster_path": "/ae4z2yBQr5htmHyfh89XdHlyQn2.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                10766,
+                18
+            ],
+            "popularity": 14.611,
+            "first_air_date": "2017-04-18",
+            "vote_average": 7.1,
+            "vote_count": 62,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/eR4bBMJOoSdb9CtiDtp8axHqP7I.jpg",
+            "id": 35279,
+            "name": "Austin & Ally",
+            "original_language": "en",
+            "original_name": "Austin & Ally",
+            "overview": "A comedy about the unique relationship between a young songwriter, Ally Dawson, and Austin Moon, the overnight internet sensation who gains sudden notoriety after performing one of Ally's songs. Austin and Ally struggle with how to maintain and capitalize on Austin's newfound fame. Austin is more of a rebel type who doesn't follow the rules and is somewhat immature for his age, while Ally is conservative yet self-conscious.",
+            "poster_path": "/g4oZ5AU1ZXVnVf4hXqbRARwRJwq.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                35,
+                10762,
+                18
+            ],
+            "popularity": 55.196,
+            "first_air_date": "2011-12-02",
+            "vote_average": 8.131,
+            "vote_count": 145,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/sSVmLcHMrOtZapIY0ip6M7shMjA.jpg",
+            "id": 61418,
+            "name": "Jane the Virgin",
+            "original_language": "en",
+            "original_name": "Jane the Virgin",
+            "overview": "A comedy-drama following a chaste young woman who is accidentally impregnated via artificial insemination as she struggles to inform her devoutly religious family and make the right choices concerning the child. Based on the telenovela \"Juana la virgen.\"",
+            "poster_path": "/DRRHgvsNEfBloMgIP8bBw4zi4E.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "popularity": 104.846,
+            "first_air_date": "2014-10-13",
+            "vote_average": 7.956,
+            "vote_count": 695,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/l0qVZIpXtIo7km9u5Yqh0nKPOr5.jpg",
+            "id": 1668,
+            "name": "Friends",
+            "original_language": "en",
+            "original_name": "Friends",
+            "overview": "Six young people from New York City, on their own and struggling to survive in the real world, find the companionship, comfort and support they get from each other to be the perfect antidote to the pressures of life.",
+            "poster_path": "/f496cm9enuEsZkSPzCwnTESEK5s.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                35,
+                18
+            ],
+            "popularity": 304.388,
+            "first_air_date": "1994-09-22",
+            "vote_average": 8.451,
+            "vote_count": 5943,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/jtuXJKTRprW4WI6x8od9H0fqXNK.jpg",
+            "id": 693,
+            "name": "Desperate Housewives",
+            "original_language": "en",
+            "original_name": "Desperate Housewives",
+            "overview": "Looking down on her friends and family isn't a way of life for Mary Alice Young... it's a way of death. One day, in her perfect house, in the loveliest of suburbs, Mary Alice ended it all. Now she's taking us into the lives of her family, friends and neighbors, commenting from her elevated P.O.V.",
+            "poster_path": "/qRxtQTPRvjYnNYVkAEZqMCNkMMD.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                9648,
+                18,
+                35
+            ],
+            "popularity": 125.196,
+            "first_air_date": "2004-10-03",
+            "vote_average": 7.941,
+            "vote_count": 1427,
+            "origin_country": [
+                "US"
+            ]
+        },
+        {
+            "adult": false,
+            "backdrop_path": "/6iEl04Zqcwf0HufpVF5C99D3V2K.jpg",
+            "id": 46958,
+            "name": "Ravenswood",
+            "original_language": "en",
+            "original_name": "Ravenswood",
+            "overview": "The town of Ravenswood has been suffering from a curse for generations. Five strangers suddenly feel connected by this fatal curse and feel the need to dig in the town's mysterious and horrible history before it's to late for each one of them.",
+            "poster_path": "/iyHfTSDTSkj4sIGcFCaj2LcqAim.jpg",
+            "media_type": "tv",
+            "genre_ids": [
+                18,
+                9648,
+                10765
+            ],
+            "popularity": 20.885,
+            "first_air_date": "2013-10-22",
+            "vote_average": 7.3,
+            "vote_count": 134,
+            "origin_country": [
+                "US"
+            ]
+        }
+    ],
+    "total_pages": 2,
+    "total_results": 40
+}
