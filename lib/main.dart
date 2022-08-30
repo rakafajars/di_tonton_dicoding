@@ -24,6 +24,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:ditonton/injection.dart' as di;
 
+import 'presentation/pages/tv_series_popular_page.dart';
+import 'presentation/pages/tv_series_top_rated_page.dart';
 import 'presentation/pages/tv_series_watchlist_page.dart';
 
 void main() {
@@ -83,6 +85,8 @@ class MyApp extends StatelessWidget {
               return MaterialPageRoute(builder: (_) => MoviePage());
             case PopularMoviesPage.ROUTE_NAME:
               return CupertinoPageRoute(builder: (_) => PopularMoviesPage());
+            case TvSeriesTopRatedPage.ROUTE_NAME:
+              return CupertinoPageRoute(builder: (_) => TvSeriesTopRatedPage());
             case TopRatedMoviesPage.ROUTE_NAME:
               return CupertinoPageRoute(builder: (_) => TopRatedMoviesPage());
             case MovieDetailPage.ROUTE_NAME:
@@ -105,6 +109,8 @@ class MyApp extends StatelessWidget {
                 builder: (_) => TvSeriesDetailPage(id: id),
                 settings: settings,
               );
+            case TvSeriesPopularPage.ROUTE_NAME:
+              return CupertinoPageRoute(builder: (_) => TvSeriesPopularPage());
             default:
               return MaterialPageRoute(builder: (_) {
                 return Scaffold(

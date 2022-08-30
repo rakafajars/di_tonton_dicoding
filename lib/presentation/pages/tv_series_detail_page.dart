@@ -216,7 +216,7 @@ class DetailContentTv extends StatelessWidget {
                                           padding: EdgeInsets.all(4.0),
                                           child: InkWell(
                                             onTap: () {
-                                              Navigator.pushNamed(
+                                              Navigator.pushReplacementNamed(
                                                 context,
                                                 TvSeriesDetailPage.ROUTE_NAME,
                                                 arguments: tvSeries.id,

@@ -102,3 +102,10 @@ final testTvSeriesMap = {
   'overview': 'overview',
   'posterPath': 'posterPath',
 };
+
+final testTvSeriesListWatchlist = TvSeries.watchlist(
+  id: 1,
+  originalName: 'originalName',
+  posterPath: 'posterPath',
+  overview: 'overview',
+);
