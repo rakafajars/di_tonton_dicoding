@@ -1,6 +1,7 @@
 import 'package:ditonton/domain/entities/tv_series_detail.dart';
+import 'package:equatable/equatable.dart';
 
-class TvSeriesDetailResponse {
+class TvSeriesDetailResponse extends Equatable {
   TvSeriesDetailResponse(
       {this.overview,
       this.posterPath,
@@ -31,4 +32,13 @@ class TvSeriesDetailResponse {
       voteAverage: this.voteAverage,
     );
   }
+
+  @override
+  List<Object?> get props => [
+        id,
+        posterPath,
+        originalName,
+        overview,
+        voteAverage,
+      ];
 }

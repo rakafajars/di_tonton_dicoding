@@ -158,6 +158,32 @@ void main() {
 
   group('get tv series detail', () {
     final tId = 31917;
+    final tTvSeriesDetail = TvSeriesDetailResponse.fromJson(
+      json.decode(
+        readJson(
+          'dummy_data/tv_series_detail.json',
+        ),
+      ),
+    );
+
+    test('should return tv series detail when the response code is 200',
+        () async {
+      // arrange
+      when(mockHttpClient.get(Uri.parse('$BASE_URL/tv/$tId?$API_KEY')))
+          .thenAnswer(
+        (_) async => http.Response(
+          readJson('dummy_data/tv_series_detail.json'),
+          200,
+          headers: {
+            HttpHeaders.contentTypeHeader: 'application/json; charset=utf-8'
+          },
+        ),
+      );
+      // act
+      final result = await dataSource.getTvSeriesDetail(tId);
+      // assert
+      expect(result, equals(tTvSeriesDetail));
+    });
 
     test('should throw Server Exception when the response code is 404 or other',
         () async {
