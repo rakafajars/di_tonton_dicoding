@@ -1,6 +1,8 @@
+import 'package:core/presentation/bloc/bloc/search_movie_bloc.dart';
 import 'package:core/presentation/provider/movie_search_notifier.dart';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 
 import '../../core.dart';
@@ -26,9 +28,15 @@ class _SearchPageState extends State<SearchPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TextField(
-              onSubmitted: (query) {
-                Provider.of<MovieSearchNotifier>(context, listen: false)
-                    .fetchMovieSearch(query);
+              onChanged: (query) {
+                // TODO DIGANTIKAN DENGAN BLOC
+                // Provider.of<MovieSearchNotifier>(context, listen: false)
+                //     .fetchMovieSearch(query);
+                context.read<SearchMovieBloc>().add(
+                      OnQueryChanged(
+                        query,
+                      ),
+                    );
                 Provider.of<TvSeriesSearchNotifier>(context, listen: false)
                     .fetchTvSeriesSearch(query);
               },
@@ -57,22 +65,28 @@ class _SearchPageState extends State<SearchPage> {
             Expanded(
               child: TabBarView(
                 children: [
-                  Consumer<MovieSearchNotifier>(
-                    builder: (context, data, child) {
-                      if (data.state == RequestState.Loading) {
+                  BlocBuilder<SearchMovieBloc, SearchMovieState>(
+                    builder: (context, state) {
+                      if (state is SearchMovieLoading) {
                         return const Center(
                           child: CircularProgressIndicator(),
                         );
-                      } else if (data.state == RequestState.Loaded) {
-                        final result = data.searchResult;
+                      } else if (state is SearchMovieHasData) {
+                        final result = state.result;
                         return Expanded(
                           child: ListView.builder(
                             padding: const EdgeInsets.all(8),
                             itemBuilder: (context, index) {
-                              final movie = data.searchResult[index];
+                              final movie = result[index];
                               return MovieCard(movie);
                             },
                             itemCount: result.length,
+                          ),
+                        );
+                      } else if (state is SearchMovieError) {
+                        return Expanded(
+                          child: Center(
+                            child: Text(state.message),
                           ),
                         );
                       } else {
@@ -82,6 +96,31 @@ class _SearchPageState extends State<SearchPage> {
                       }
                     },
                   ),
+                  // Consumer<MovieSearchNotifier>(
+                  //   builder: (context, data, child) {
+                  //     if (data.state == RequestState.Loading) {
+                  //       return const Center(
+                  //         child: CircularProgressIndicator(),
+                  //       );
+                  //     } else if (data.state == RequestState.Loaded) {
+                  //       final result = data.searchResult;
+                  //       return Expanded(
+                  //         child: ListView.builder(
+                  //           padding: const EdgeInsets.all(8),
+                  //           itemBuilder: (context, index) {
+                  //             final movie = data.searchResult[index];
+                  //             return MovieCard(movie);
+                  //           },
+                  //           itemCount: result.length,
+                  //         ),
+                  //       );
+                  //     } else {
+                  //       return Expanded(
+                  //         child: Container(),
+                  //       );
+                  //     }
+                  //   },
+                  // ),
                   Consumer<TvSeriesSearchNotifier>(
                     builder: (context, data, child) {
                       if (data.state == RequestState.Loading) {

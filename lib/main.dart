@@ -1,5 +1,6 @@
 import 'package:about/about_page.dart';
 import 'package:core/core.dart';
+import 'package:core/presentation/bloc/bloc/search_movie_bloc.dart';
 import 'package:core/presentation/pages/bottom_navigator_page.dart';
 import 'package:core/presentation/pages/movie_detail_page.dart';
 import 'package:core/presentation/pages/movie_page.dart';
@@ -24,6 +25,7 @@ import 'package:core/presentation/provider/watchlist_movie_notifier.dart';
 import 'package:core/utils/routes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:ditonton/injection.dart' as di;
 
@@ -66,6 +68,9 @@ class MyApp extends StatelessWidget {
         ),
         ChangeNotifierProvider(
           create: (_) => di.locator<TvSeriesWatchlistNotifier>(),
+        ),
+        BlocProvider(
+          create: (_) => di.locator<SearchMovieBloc>(),
         ),
       ],
       child: MaterialApp(
