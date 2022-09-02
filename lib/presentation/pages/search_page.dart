@@ -1,4 +1,5 @@
 import 'package:ditonton/common/constants.dart';
+import 'package:ditonton/presentation/bloc/search_tv_series/search_tv_series_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
@@ -31,13 +32,19 @@ class _SearchPageState extends State<SearchPage> {
                 // TODO DIGANTIKAN DENGAN BLOC
                 // Provider.of<MovieSearchNotifier>(context, listen: false)
                 //     .fetchMovieSearch(query);
+                //   Provider.of<TvSeriesSearchNotifier>(context, listen: false)
+                // .fetchTvSeriesSearch(query);
                 context.read<SearchMovieBloc>().add(
                       OnQueryChanged(
                         query,
                       ),
                     );
-                Provider.of<TvSeriesSearchNotifier>(context, listen: false)
-                    .fetchTvSeriesSearch(query);
+
+                context.read<SearchTvSeriesBloc>().add(
+                      SearchTvQueryEvent(
+                        query,
+                      ),
+                    );
               },
               decoration: const InputDecoration(
                 hintText: 'Search title',
@@ -95,47 +102,28 @@ class _SearchPageState extends State<SearchPage> {
                       }
                     },
                   ),
-                  // Consumer<MovieSearchNotifier>(
-                  //   builder: (context, data, child) {
-                  //     if (data.state == RequestState.Loading) {
-                  //       return const Center(
-                  //         child: CircularProgressIndicator(),
-                  //       );
-                  //     } else if (data.state == RequestState.Loaded) {
-                  //       final result = data.searchResult;
-                  //       return Expanded(
-                  //         child: ListView.builder(
-                  //           padding: const EdgeInsets.all(8),
-                  //           itemBuilder: (context, index) {
-                  //             final movie = data.searchResult[index];
-                  //             return MovieCard(movie);
-                  //           },
-                  //           itemCount: result.length,
-                  //         ),
-                  //       );
-                  //     } else {
-                  //       return Expanded(
-                  //         child: Container(),
-                  //       );
-                  //     }
-                  //   },
-                  // ),
-                  Consumer<TvSeriesSearchNotifier>(
-                    builder: (context, data, child) {
-                      if (data.state == RequestState.Loading) {
+                  BlocBuilder<SearchTvSeriesBloc, SearchTvSeriesState>(
+                    builder: (context, state) {
+                      if (state is SearchTvSeriesLoading) {
                         return const Center(
-                          child: const CircularProgressIndicator(),
+                          child: CircularProgressIndicator(),
                         );
-                      } else if (data.state == RequestState.Loaded) {
-                        final result = data.searchResult;
+                      } else if (state is SearchTvSeriesHasData) {
+                        final result = state.result;
                         return Expanded(
                           child: ListView.builder(
                             padding: const EdgeInsets.all(8),
                             itemBuilder: (context, index) {
-                              final tvSeries = data.searchResult[index];
+                              final tvSeries = result[index];
                               return TvSeriesCard(tvSeries);
                             },
                             itemCount: result.length,
+                          ),
+                        );
+                      } else if (state is SearchTvSeriesError) {
+                        return Expanded(
+                          child: Center(
+                            child: Text(state.message),
                           ),
                         );
                       } else {
