@@ -1,5 +1,6 @@
 import 'package:ditonton/presentation/pages/movie_page.dart';
 import 'package:ditonton/presentation/pages/tv_series_page.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/material.dart';
 
 import '../../common/routes.dart';
