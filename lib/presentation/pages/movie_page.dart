@@ -1,13 +1,12 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ditonton/common/constants.dart';
 import 'package:ditonton/domain/entities/movie.dart';
-import 'package:ditonton/presentation/pages/movie_detail_page.dart';
-import 'package:ditonton/presentation/pages/popular_movies_page.dart';
-import 'package:ditonton/presentation/pages/top_rated_movies_page.dart';
 import 'package:ditonton/presentation/provider/movie_list_notifier.dart';
 import 'package:ditonton/common/state_enum.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import '../../common/routes.dart';
 
 class MoviePage extends StatefulWidget {
   @override
@@ -51,8 +50,7 @@ class _MoviePageState extends State<MoviePage> {
             }),
             _buildSubHeading(
               title: 'Popular',
-              onTap: () =>
-                  Navigator.pushNamed(context, PopularMoviesPage.ROUTE_NAME),
+              onTap: () => Navigator.pushNamed(context, POPULAR_MOVIE_ROUTE),
             ),
             Consumer<MovieListNotifier>(builder: (context, data, child) {
               final state = data.popularMoviesState;
@@ -68,8 +66,7 @@ class _MoviePageState extends State<MoviePage> {
             }),
             _buildSubHeading(
               title: 'Top Rated',
-              onTap: () =>
-                  Navigator.pushNamed(context, TopRatedMoviesPage.ROUTE_NAME),
+              onTap: () => Navigator.pushNamed(context, TOP_RATED_MOVIE_ROUTE),
             ),
             Consumer<MovieListNotifier>(builder: (context, data, child) {
               final state = data.topRatedMoviesState;
@@ -130,7 +127,7 @@ class MovieList extends StatelessWidget {
               onTap: () {
                 Navigator.pushNamed(
                   context,
-                  MovieDetailPage.ROUTE_NAME,
+                  DETAIL_MOVIE_ROUTE,
                   arguments: movie.id,
                 );
               },

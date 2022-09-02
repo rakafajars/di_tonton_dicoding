@@ -1,10 +1,8 @@
-import 'package:ditonton/presentation/pages/about_page.dart';
 import 'package:ditonton/presentation/pages/movie_page.dart';
-import 'package:ditonton/presentation/pages/search_page.dart';
 import 'package:ditonton/presentation/pages/tv_series_page.dart';
-import 'package:ditonton/presentation/pages/tv_series_watchlist_page.dart';
-import 'package:ditonton/presentation/pages/watchlist_movies_page.dart';
 import 'package:flutter/material.dart';
+
+import '../../common/routes.dart';
 
 class BottomNavigatorPage extends StatefulWidget {
   const BottomNavigatorPage({Key? key}) : super(key: key);
@@ -45,19 +43,19 @@ class _BottomNavigatorPageState extends State<BottomNavigatorPage> {
               leading: Icon(Icons.save_alt),
               title: Text('Movie Watchlist'),
               onTap: () {
-                Navigator.pushNamed(context, WatchlistMoviesPage.ROUTE_NAME);
+                Navigator.pushNamed(context, WATCHLIST_MOVIE_ROUTE);
               },
             ),
             ListTile(
               leading: Icon(Icons.tv),
               title: Text('Tv Series Watchlist'),
               onTap: () {
-                Navigator.pushNamed(context, TvSeriesWatchlistPage.ROUTE_NAME);
+                Navigator.pushNamed(context, TV_SERIES_WATCHLIST_ROUTE);
               },
             ),
             ListTile(
               onTap: () {
-                Navigator.pushNamed(context, AboutPage.ROUTE_NAME);
+                Navigator.pushNamed(context, ABOUT_ROUTE);
               },
               leading: Icon(Icons.info_outline),
               title: Text('About'),
@@ -70,7 +68,7 @@ class _BottomNavigatorPageState extends State<BottomNavigatorPage> {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, SearchPage.ROUTE_NAME);
+              Navigator.pushNamed(context, SEARCH_ROUTE);
             },
             icon: Icon(Icons.search),
           )

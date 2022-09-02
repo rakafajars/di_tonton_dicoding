@@ -8,10 +8,9 @@ import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:provider/provider.dart';
 
 import '../../common/constants.dart';
+import '../../common/routes.dart';
 
 class TvSeriesDetailPage extends StatefulWidget {
-  static const ROUTE_NAME = '/tvSeriesDetail';
-
   final int id;
   TvSeriesDetailPage({required this.id});
 
@@ -218,7 +217,7 @@ class DetailContentTv extends StatelessWidget {
                                             onTap: () {
                                               Navigator.pushReplacementNamed(
                                                 context,
-                                                TvSeriesDetailPage.ROUTE_NAME,
+                                                TV_SERIES_DETAIL_ROUTE,
                                                 arguments: tvSeries.id,
                                               );
                                             },

@@ -6,8 +6,6 @@ import '../../common/state_enum.dart';
 import '../provider/tv_series_list_notifier.dart';
 
 class TvSeriesTopRatedPage extends StatefulWidget {
-  static const ROUTE_NAME = '/top-rated-tv-series';
-
   const TvSeriesTopRatedPage({Key? key}) : super(key: key);
 
   @override

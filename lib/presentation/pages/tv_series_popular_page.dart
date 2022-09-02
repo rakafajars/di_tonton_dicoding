@@ -6,8 +6,6 @@ import 'package:provider/provider.dart';
 import '../../common/state_enum.dart';
 
 class TvSeriesPopularPage extends StatefulWidget {
-  static const ROUTE_NAME = '/popular-tv-series';
-
   const TvSeriesPopularPage({Key? key}) : super(key: key);
 
   @override
