@@ -2,11 +2,8 @@ import 'package:ditonton/common/constants.dart';
 import 'package:ditonton/presentation/bloc/search_tv_series/search_tv_series_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 
-import '../../common/state_enum.dart';
 import '../bloc/search_movie/search_movie_bloc.dart';
-import '../provider/tv_series_search_notifier.dart';
 import '../widgets/movie_card_list.dart';
 import '../widgets/tv_series_card_list.dart';
 

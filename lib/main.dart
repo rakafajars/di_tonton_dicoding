@@ -32,6 +32,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';
 import 'package:ditonton/injection.dart' as di;
 
+import 'presentation/bloc/movie_recommendation/movie_recommendation_bloc.dart';
 import 'presentation/pages/tv_series_popular_page.dart';
 import 'presentation/pages/tv_series_top_rated_page.dart';
 import 'presentation/pages/tv_series_watchlist_page.dart';
@@ -95,6 +96,9 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (_) => di.locator<MovieDetailBloc>(),
+        ),
+        BlocProvider(
+          create: (_) => di.locator<MovieRecommendationBloc>(),
         ),
       ],
       child: MaterialApp(
