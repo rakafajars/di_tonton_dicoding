@@ -1,4 +1,3 @@
-
 import 'package:bloc_test/bloc_test.dart';
 import 'package:dartz/dartz.dart';
 import 'package:ditonton/common/failure.dart';
@@ -48,7 +47,7 @@ void main() {
     'Should emit [Loading, HasData] when data is gotten successfully',
     build: () {
       when(mockGetTopRatedMovies.execute()).thenAnswer(
-            (_) async => Right(
+        (_) async => Right(
           tMovieList,
         ),
       );
@@ -67,10 +66,10 @@ void main() {
   );
 
   blocTest(
-    'Should emit [Loading, Error] when get search is unsuccessful',
+    'Should emit [Loading, Error] when data is gotten successfully',
     build: () {
       when(mockGetTopRatedMovies.execute()).thenAnswer(
-            (_) async => Left(
+        (_) async => Left(
           ServerFailure(
             'Server Failure',
           ),

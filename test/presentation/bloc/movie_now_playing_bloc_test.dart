@@ -66,7 +66,7 @@ void main() {
   );
 
   blocTest(
-    'Should emit [Loading, Error] when get search is unsuccessful',
+    'Should emit [Loading, Error] when data is gotten successfully',
     build: () {
       when(mockGetNowPlayingMovies.execute()).thenAnswer(
         (_) async => Left(

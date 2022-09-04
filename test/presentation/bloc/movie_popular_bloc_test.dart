@@ -47,7 +47,7 @@ void main() {
     'Should emit [Loading, HasData] when data is gotten successfully',
     build: () {
       when(mockGetPopularMovies.execute()).thenAnswer(
-            (_) async => Right(
+        (_) async => Right(
           tMovieList,
         ),
       );
@@ -66,10 +66,10 @@ void main() {
   );
 
   blocTest(
-    'Should emit [Loading, Error] when get search is unsuccessful',
+    'Should emit [Loading, Error] when data is gotten successfully',
     build: () {
       when(mockGetPopularMovies.execute()).thenAnswer(
-            (_) async => Left(
+        (_) async => Left(
           ServerFailure(
             'Server Failure',
           ),
