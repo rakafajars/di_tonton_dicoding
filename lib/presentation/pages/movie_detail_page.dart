@@ -10,6 +10,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:provider/provider.dart';
 
+import '../bloc/watchlist_movie/watchlist_movie_bloc.dart';
 import 'movie_recommendation.dart';
 
 class MovieDetailPage extends StatefulWidget {
@@ -30,10 +31,17 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
           widget.id,
         ),
       );
-    Future.microtask(() {
-      Provider.of<MovieDetailNotifier>(context, listen: false)
-          .loadWatchlistStatus(widget.id);
-    });
+
+    BlocProvider.of<WatchlistMovieBloc>(context)
+      ..add(
+        FetchWatchlistMovieStatus(
+          widget.id,
+        ),
+      );
+    // Future.microtask(() {
+    //   Provider.of<MovieDetailNotifier>(context, listen: false)
+    //       .loadWatchlistStatus(widget.id);
+    // });
   }
 
   @override
@@ -47,12 +55,20 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
             );
           } else if (state is MovieDetailHasData) {
             final movie = state.result;
-            return SafeArea(
-              child: DetailContent(movie, [], false, widget.id
-
-                  // provider.movieRecommendations,
-                  // provider.isAddedToWatchlist,
-                  ),
+            return BlocBuilder<WatchlistMovieBloc, WatchlistMovieState>(
+              builder: (context, state) {
+                if (state is WatchlistStatusHasData) {
+                  return SafeArea(
+                    child: DetailContent(
+                      movie,
+                      state.isAddtoWatchlist,
+                      widget.id,
+                    ),
+                  );
+                } else {
+                  return Container();
+                }
+              },
             );
           } else if (state is MovieDetailError) {
             return Text(state.message);
@@ -87,13 +103,11 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
 
 class DetailContent extends StatelessWidget {
   final MovieDetail movie;
-  final List<Movie> recommendations;
   final bool isAddedWatchlist;
   final int id;
 
   DetailContent(
     this.movie,
-    this.recommendations,
     this.isAddedWatchlist,
     this.id,
   );
