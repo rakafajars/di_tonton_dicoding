@@ -1,9 +1,11 @@
 import 'package:bloc/bloc.dart';
+import 'package:ditonton/domain/usecases/get_watchlist_movies.dart';
 import 'package:ditonton/domain/usecases/get_watchlist_status.dart';
 import 'package:ditonton/domain/usecases/remove_watchlist.dart';
 import 'package:ditonton/domain/usecases/save_watchlist.dart';
 import 'package:equatable/equatable.dart';
 
+import '../../../domain/entities/movie.dart';
 import '../../../domain/entities/movie_detail.dart';
 
 part 'watchlist_movie_event.dart';
@@ -14,13 +16,21 @@ class WatchlistMovieBloc
   final GetWatchListStatus _getWatchListStatus;
   final SaveWatchlist _saveWatchlist;
   final RemoveWatchlist _removeWatchlist;
-  WatchlistMovieBloc(
-    this._getWatchListStatus,
-    this._saveWatchlist,
-    this._removeWatchlist,
-  ) : super(WatchlistMovieInitial()) {
+  final GetWatchlistMovies _getWatchlistMovies;
+  WatchlistMovieBloc(this._getWatchListStatus, this._saveWatchlist,
+      this._removeWatchlist, this._getWatchlistMovies)
+      : super(WatchlistMovieEmpty()) {
     on<WatchlistMovieEvent>(
       (event, emit) async {
+        if (event is FetchWatchlistMovie) {
+          emit(WatchlistMovieLoading());
+          final result = await _getWatchlistMovies.execute();
+
+          result.fold(
+            (failure) => emit(WatchlistMovieError(failure.message)),
+            (data) => emit(WatchlistMovieHasData(data)),
+          );
+        }
         if (event is AddWatchlistMovieEvent) {
           final result = await _saveWatchlist.execute(event.movieDetail);
 
