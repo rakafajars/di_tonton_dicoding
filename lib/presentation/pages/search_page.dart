@@ -26,11 +26,6 @@ class _SearchPageState extends State<SearchPage> {
           children: [
             TextField(
               onChanged: (query) {
-                // TODO DIGANTIKAN DENGAN BLOC
-                // Provider.of<MovieSearchNotifier>(context, listen: false)
-                //     .fetchMovieSearch(query);
-                //   Provider.of<TvSeriesSearchNotifier>(context, listen: false)
-                // .fetchTvSeriesSearch(query);
                 context.read<SearchMovieBloc>().add(
                       OnQueryChanged(
                         query,

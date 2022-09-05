@@ -1,11 +1,8 @@
 import 'package:ditonton/presentation/widgets/tv_series_card_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:provider/provider.dart';
 
-import '../../common/state_enum.dart';
 import '../bloc/tv_series_top_rated/tv_series_top_rated_bloc.dart';
-import '../provider/tv_series_list_notifier.dart';
 
 class TvSeriesTopRatedPage extends StatefulWidget {
   const TvSeriesTopRatedPage({Key? key}) : super(key: key);

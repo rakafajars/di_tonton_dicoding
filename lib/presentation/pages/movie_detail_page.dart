@@ -1,14 +1,11 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ditonton/common/constants.dart';
 import 'package:ditonton/domain/entities/genre.dart';
-import 'package:ditonton/domain/entities/movie.dart';
 import 'package:ditonton/domain/entities/movie_detail.dart';
 import 'package:ditonton/presentation/bloc/movie_detail/movie_detail_bloc.dart';
-import 'package:ditonton/presentation/provider/movie_detail_notifier.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:provider/provider.dart';
 
 import '../bloc/watchlist_movie/watchlist_movie_bloc.dart';
 import 'movie_recommendation.dart';
@@ -38,10 +35,6 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
           widget.id,
         ),
       );
-    // Future.microtask(() {
-    //   Provider.of<MovieDetailNotifier>(context, listen: false)
-    //       .loadWatchlistStatus(widget.id);
-    // });
   }
 
   @override
@@ -77,26 +70,6 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
           }
         },
       ),
-      // body: Consumer<MovieDetailNotifier>(
-      //   builder: (context, provider, child) {
-      //     if (provider.movieState == RequestState.Loading) {
-      //       return Center(
-      //         child: CircularProgressIndicator(),
-      //       );
-      //     } else if (provider.movieState == RequestState.Loaded) {
-      //       final movie = provider.movie;
-      //       return SafeArea(
-      //         child: DetailContent(
-      //           movie,
-      //           provider.movieRecommendations,
-      //           provider.isAddedToWatchlist,
-      //         ),
-      //       );
-      //     } else {
-      //       return Text(provider.message);
-      //     }
-      //   },
-      // ),
     );
   }
 }

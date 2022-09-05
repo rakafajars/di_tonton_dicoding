@@ -21,7 +21,7 @@ class MovieTvCardRecommendation extends StatelessWidget {
             Radius.circular(8),
           ),
           child: CachedNetworkImage(
-            imageUrl: 'https://image.tmdb.org/t/p/w500${posterPath}',
+            imageUrl: 'https://image.tmdb.org/t/p/w500$posterPath',
             placeholder: (context, url) => Center(
               child: CircularProgressIndicator(),
             ),
